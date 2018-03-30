@@ -55,6 +55,20 @@ item[data-type="note"] {
   }
 }
 
+// Tag styles -----------------------------------
+// Personal tag (@p)
+item[data-p] {
+    font-size: @user-font-size;
+    font-style: normal;
+    font-weight: normal;
+    color: @color4;
+    > run[tag] {
+        color: fade(@color4, 60%);
+    }
+}
+
+
+
 run[link] {
   color: blue;
   text-decoration: underline;
