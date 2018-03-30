@@ -62,8 +62,9 @@ item[data-p] {
     font-style: normal;
     font-weight: normal;
     color: @color4;
-    > run[tag] {
-        color: fade(@color4, 60%);
+    > run[tag=data-p] {
+        color: @color4;
+        //color: fade(@color4, 60%);
     }
 }
 
