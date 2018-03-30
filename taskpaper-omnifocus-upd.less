@@ -88,10 +88,7 @@ item[data-p] {
 // for whatever reason, I have to run the "tag" customisations inside the data itself...
 
 item[data-w] {
-    //font-size: @user-font-size;
-    //font-style: normal;
-    //font-weight: normal;
-    //color: @color1;
+    color: @text-color; // to reset the line color in the case of @p @w in the same line
     > run[tag=data-w] {
         font-size: @user-font-size+2;
         font-weight: bold;
