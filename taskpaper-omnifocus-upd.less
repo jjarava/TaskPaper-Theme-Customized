@@ -85,13 +85,27 @@ item[data-p] {
 // }
 
 // Highlight the tag itself, 2 points larger, and in bold
+// for whatever reason, I have to run the "tag" customisations inside the data itself...
 
-run[tag=data-w] {
-    font-size: @user-font-size+2;
-   font-weight: bold;
-    color: @color1;
+item[data-w] {
+    font-size: @user-font-size;
+    font-style: normal;
+    font-weight: normal;
+    //color: @color1;
+    > run[tag=data-w] {
+        font-size: @user-font-size+2;
+        font-weight: bold;
+        color: @color1;
+        //color: fade(@color1, 60%);
+    }
 }
 
+// This "shorter" version won't work :(
+// run[tag=data-w] {
+//     font-size: @user-font-size+2;
+//    // font-weight: bold;
+//     color: @color1;
+// }
 
 
 run[link] {
