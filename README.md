@@ -2,7 +2,7 @@
 
 A custom TaskPaper 3 Theme, adapted to my use of TaskPaper as a task list, but without much focus on projects.
 
-More of a "dumping ground" or "list of tasks" [^f1]
+More of a "dumping ground" or "list of tasks"
 
 ## Acknowledgements
 
@@ -35,4 +35,4 @@ Backup then replace the **theme.less** file located at:
 > NOTE: You can easily get to this folder location from the TaskPaper File menu > **Open Application Folder**. ALSO NOTE: You will need to change the name to theme.less to be recognised by TP versions earlier than 3.5
 
 
-[^f1]: This theme and associated files can be found in GH: <https://github.com/jjarava/TaskPaper-Theme-Customized>
+PD: This theme and associated files can be found in GH: <https://github.com/jjarava/TaskPaper-Theme-Customized>
