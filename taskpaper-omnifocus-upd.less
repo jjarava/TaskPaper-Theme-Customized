@@ -73,15 +73,23 @@ item[data-p] {
 // Don't highlight the _content_ of the lines, but just the tag itselfs
 // tags that are not @p(ersonal) are likely @w(ork)
 
-item[data-w] {
-    font-size: @user-font-size;
-    font-style: normal;
-    font-weight: normal;
+// item[data-w] {
+//     font-size: @user-font-size;
+//     font-style: normal;
+//     font-weight: normal;
+//     color: @color1;
+//     > run[tag=data-w] {
+//         color: @color1;
+//         //color: fade(@color1, 60%);
+//     }
+// }
+
+// Highlight the tag itself, 2 points larger, and in bold
+
+run[tag=data-w] {
+    font-size: @user-font-size+2;
+   font-weight: bold;
     color: @color1;
-    > run[tag=data-w] {
-        color: @color1;
-        //color: fade(@color1, 60%);
-    }
 }
 
 
