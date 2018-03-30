@@ -10,6 +10,14 @@ The starting point for this theme is Matt Gemmell's _excelent_ Omni-Focus based 
 
 I've also borrowed elements (colors, syntax elements...) from @jasonshanks's excellent [Atom One Dark 2 for TaskPaper 3](https://github.com/jasonshanks/TaskPaper-Atom-One-Dark)
 
+## Preview
+
+The main changes from Matt's theme is adding a couple of tags (`@p` for Personal tasks and `@w` for Work related ones), and reducing the font size.
+
+I've taken Matt's sample file (go to his site to find it), and applied the updated theme
+
+![Sample Taskpaper](./Preview.jpg)
+
 ## Installation
 
 Move the Atom-One-Dark-Blue.less file to:
