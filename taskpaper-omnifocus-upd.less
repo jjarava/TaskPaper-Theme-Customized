@@ -68,6 +68,22 @@ item[data-p] {
     }
 }
 
+// Work tag (@w)
+
+// Don't highlight the _content_ of the lines, but just the tag itselfs
+// tags that are not @p(ersonal) are likely @w(ork)
+
+item[data-w] {
+    font-size: @user-font-size;
+    font-style: normal;
+    font-weight: normal;
+    color: @color1;
+    > run[tag=data-w] {
+        color: @color1;
+        //color: fade(@color1, 60%);
+    }
+}
+
 
 
 run[link] {
