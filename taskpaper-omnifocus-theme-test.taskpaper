@@ -3,6 +3,8 @@ One project:
 	- Here's a personal task @p
 	- Here's a work task @w
 	- And here's a task that is both personal and work related @p @w
+	- Here's a client task @cli
+	- And an urgent client task @cli @urgent	
 	- Here's one with a link: http://twitter.com/mattgemmell
 	- An example task goes here @my-tag @your-tag
 	- Call the guy about the thing @today
@@ -22,10 +24,14 @@ Priorities:
 	- This isn't very important at all @priority(low)
 	- Nor is this @priority(5)
 [Searches]:
-	- Next Actions @search(project *//((not @done\) and (not @search\)\)[0])
-	- Due Today @search(not @done and (@today or @due <=[d] today +1d or @due <=[d] today\))
-	- Due within 7 days @search(not @done and (@today or @due <=[d] today +7d or @due <=[d] today\))
-	- Priority: High @search(not @done and (@priority = [i]high or @priority = 1\))
+	- Urgent @search(not @done and @urgent)
+	- Work @search(not @done and @w)
+	- Client @search(not @done and @cli)
+	- Personal @search(not @done and @p)
 	- Flagged @search(not @done and @flag)
+	- Next Actions Per Proj @search(project *//\(\(not @done\) and \(not @search\)\)[0])
+	- Due Today @search(not @done and \(@today or @due <=[d] today +2d or @due <=[d] today\))
+	- Due within 7 days @search(not @done and \(@today or @due <=[d] today +7d or @due <=[d] today\))
+	- Priority: High @search(not @done and \(@priority = [i]high or @priority = 1\))
 	- Context: Work @search(not @done and @context = [i]work)
 	- Context: Home @search(not @done and @context = [i]home)
