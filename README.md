@@ -10,11 +10,16 @@ The starting point for this theme is Matt Gemmell's _excelent_ Omni-Focus based 
 
 I've also borrowed elements (colors, syntax elements...) from @jasonshanks's excellent [Atom One Dark 2 for TaskPaper 3](https://github.com/jasonshanks/TaskPaper-Atom-One-Dark)
 
+## ChangeLog
+
+- 2018-03-31: Added `@cli` tag (highlighted based on background color) and cleaned up/updated Searches in the sample file
+
 ## Preview
 
 The main changes from Matt's theme is adding a couple of tags (`@p` for Personal tasks and `@w` for Work related ones), and reducing the font size.
+Also added `@cli` tag, highlighted based on background color.
 
-I've taken Matt's sample file (go to his site to find it), and applied the updated theme
+I've copied Matt's sample file and changed it to add lines with the relevant tags etc, and applied the updated theme (my changed version is [here](./taskpaper-omnifocus-theme-test.taskpaper)) and the result is below:
 
 ![Sample Taskpaper](./Preview.jpg)
 
