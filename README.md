@@ -25,7 +25,7 @@ I've copied Matt's sample file and changed it to add lines with the relevant tag
 
 ## Installation
 
-Move the Atom-One-Dark-Blue.less file to:
+Move the .less file to:
 
 `~/Library/Application Support/TaskPaper/Stylesheets`
 
