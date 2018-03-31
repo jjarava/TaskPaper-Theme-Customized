@@ -117,13 +117,18 @@ item[data-cli] {
     font-size: @user-font-size+2;
     font-style: normal;
     font-weight: normal;
-    background-color: fade(@cli-color, 10%);
+   // background-color: fade(@cli-color, 10%);
     //color: #158FF4;
     
     > run[tag=data-cli] {
         color: @cli-color;
         font-weight: bold
     }
+    
+        > run[content] {
+    background-color: fade(@cli-color, 10%);
+    }
+
 }
 
 run[link] {
