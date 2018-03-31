@@ -12,14 +12,15 @@
 // https://github.com/jjarava/TaskPaper-Theme-Customized
 
 // Colors -----------------------------------
-@color1: hsl(187, 47%, 55%); // Fountain Blue
-@color2: hsl(207, 82%, 66%); // Malibu
-@color3: hsl(286, 60%, 67%); // Soft Purple
-@color4: hsl(95, 38%, 62%); // Pistachio
-@color5: hsl(355, 65%, 65%); // Froly
-@color6: hsl(5, 48%, 51%); // Sunset
-@color7: hsl(29, 54%, 61%); // Whiskey
-@color8: hsl(39, 67%, 69%); // Chalky
+@color1: hsl(187, 47%, 55%); // Fountain Blue ("#4A858C")
+@color2: hsl(207, 82%, 66%); // Malibu ("#1E6AA8")
+@color3: hsl(286, 60%, 67%); // Soft Purple ("#9344AB")
+@color4: hsl(95, 38%, 62%); // Pistachio ("#7B9E62")
+@color5: hsl(355, 65%, 65%); // Froly ("#A31C31")
+@color6: hsl(5, 48%, 51%); // Sunset ("#824944")
+@color7: hsl(29, 54%, 61%); // Whiskey ("#9C7048")
+@color8: hsl(39, 67%, 69%); // Chalky ("#B0873A")
+@cli-color: #158FF4; // Color for @cli tag
 
 //Updated to have the font size to "natural" size
 //@user-font-size: 18;
@@ -107,6 +108,23 @@ item[data-w] {
 //     color: @color1;
 // }
 
+// Client tag (@cli)
+// Highlight the tag itself like the "work" one (+2, bold)
+// Instead of colouring the line text, highlight the background
+// So other tags such as @urgent might put the proper color.
+
+item[data-cli] {
+    font-size: @user-font-size+2;
+    font-style: normal;
+    font-weight: normal;
+    background-color: fade(@cli-color, 10%);
+    //color: #158FF4;
+    
+    > run[tag=data-cli] {
+        color: @cli-color;
+        font-weight: bold
+    }
+}
 
 run[link] {
   color: blue;
