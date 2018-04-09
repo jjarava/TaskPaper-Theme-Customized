@@ -158,12 +158,16 @@ item[data-writing], run[tag=data-writing] {
 	color: @tint-color;
 }
 
+// Set the font to be +3 on Urgent items
 item[data-today], run[tag=data-today], item[data-urgent], run[tag=data-urgent] {
   color: rgb(255, 0, 0);
+  font-size: @user-font-size+3;
 }
 
+// Set the @urgent tag itself to be also font +3
 run[tag=data-today], run[tag=data-urgent] {
 	font-weight: bold;
+	font-size: @user-font-size+3;
 }
 
 run[tag=data-flag] {
@@ -188,6 +192,8 @@ item[data-priority] {
   > run[tagvalue=high], > run[tagvalue="1"] {
     color: #f00;
     font-weight: bold;
+    // on @priority(1) and @priority(high), make the tag value itself +3
+    font-size: @user-font-size+3;
   }
   > run[tagvalue=low], > run[tagvalue="5"] {
     color: #888;
